@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,7 +6,7 @@ import pages.HomePage;
 import utils.Navigator;
 import utils.WebDriverManager;
 
-import java.sql.Driver;
+
 
 public class FacebookTest {
 
@@ -19,8 +17,8 @@ public class FacebookTest {
 
     @Test
     public void successFacebookLoginTest(){
-        Navigator.OpenMainFacebookPage().submitForWithCredentials("linevitch2010@yandex.ru", "Fantasy89!");
-        Assert.assertTrue(HomePage.getUserName().equals("Яна Кудря"));
+        Navigator.OpenMainFacebookPage().submitForWithCredentials("", "");
+        Assert.assertTrue(HomePage.getUserName().equals("Яна"));
     }
 
     @AfterMethod

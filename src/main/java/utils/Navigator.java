@@ -1,5 +1,6 @@
 package utils;
 
+import org.openqa.selenium.WebDriver;
 import pages.FacebookLandingPage;
 
 public class Navigator {

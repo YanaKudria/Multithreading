@@ -9,10 +9,10 @@ import java.sql.Driver;
 
 public class HomePage {
 
-    private static String userName = "div[dir=ltr]";
+    private static String userName = "//span[@class = \"_1vp5\"]";
 
     public static String getUserName(){
-        WebElement nameArea = WebDriverManager.driver.findElement(By.cssSelector(userName));
+        WebElement nameArea = WebDriverManager.driver.findElement(By.xpath(userName));
         String name = nameArea.getText();
         return name;
     }
